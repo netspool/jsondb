@@ -27,13 +27,13 @@
 # THE POSSIBILITY OF SUCH DAMAGE.
 
 import os
-import simplejson
+import ujson
 
 def load(location, option):
-    '''Return a pickledb object. location is the path to the json file.'''
-    return pickledb(location, option)
+    '''Return a jsondb object. location is the path to the json file.'''
+    return jsondb(location, option)
 
-class pickledb(object):
+class jsondb(object):
 
     def __init__(self, location, option):
         '''Creates a database object and loads the data from the location path.
@@ -193,9 +193,9 @@ class pickledb(object):
 
     def _loaddb(self):
         '''Load or reload the json info from the file'''
-        self.db = simplejson.load(open(self.loco, 'rb'))
+        self.db = ujson.load(open(self.loco, 'rb'))
 
     def _dumpdb(self, forced):
         '''Write/save the json dump into the file'''
         if forced:
-           simplejson.dump(self.db, open(self.loco, 'wt'))
+           ujson.dump(self.db, open(self.loco, 'wt'))

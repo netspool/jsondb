@@ -1,18 +1,18 @@
 """
-pickleDB
+jsonDB
 --------
 
-pickleDB is lightweight, fast, and simple database based on Python's own
+jsonDB is lightweight, fast, and simple database based on Python's own
 json module. And it's BSD licensed!
 
-pickleDB is Fun
+jsonDB is Fun
 ```````````````
 
 ::
 
-    >>> import pickledb
+    >>> import jsondb
 
-    >>> db = pickledb.load('test.db', False)
+    >>> db = jsondb.load('test.db', False)
 
     >>> db.set('key', 'value')
 
@@ -28,31 +28,31 @@ And Easy to Install
 
 ::
 
-    $ pip install pickledb
+    $ pip install jsondb
 
 Links
 `````
 
-* `website <http://packages.python.org/pickleDB/>`_
-* `documentation <http://packages.python.org/pickleDB/commands.html>`_
-* `bitbucket repo <https://bitbucket.org/patx/pickledb>`_
+* `website <http://packages.python.org/jsonDB/>`_
+* `documentation <http://packages.python.org/jsonDB/commands.html>`_
+* `bitbucket repo <https://bitbucket.org/patx/jsondb>`_
 
 """
 
 from distutils.core import setup
 
-setup(name = "pickleDB",
-    version="0.6.2",
-    description="A lightweight and simple database using simplejson.",
-    author="Harrison Erd",
-    author_email="patx44@gmail.com",
+setup(name = "jsonDB",
+    version="0.1.0",
+    description="A lightweight and simple database using ujson.",
+    author="Harrison Erd / Dainis Karakulko",
+    author_email="dennis.karakulko@gmail.com",
     license="three-clause BSD",
-    url="http://bitbucket.org/patx/pickledb",
+    url="https://github.com/netspool/jsondb",
     long_description=__doc__,
     classifiers = [
         "Programming Language :: Python",
         "License :: OSI Approved :: BSD License",
         "Intended Audience :: Developers",
         "Topic :: Database" ],
-    py_modules=['pickledb'],
-    install_requires=['simplejson'])
+    py_modules=['jsondb'],
+    install_requires=['ujson'])

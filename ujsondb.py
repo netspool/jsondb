@@ -30,10 +30,10 @@ import os
 import ujson
 
 def load(location, option):
-    '''Return a jsondb object. location is the path to the json file.'''
-    return jsondb(location, option)
+    '''Return a ujsondb object. location is the path to the json file.'''
+    return ujsondb(location, option)
 
-class jsondb(object):
+class ujsondb(object):
 
     def __init__(self, location, option):
         '''Creates a database object and loads the data from the location path.

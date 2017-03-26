@@ -1,15 +1,15 @@
-jsonDB
+ujsonDB
 --------
 
-jsonDB is lightweight, fast, and simple database based on the `ujson <https://pypi.python.org/pypi/ujson/>`_ module. And it's BSD licensed!
+ujsonDB is lightweight, fast, and simple database based on the `ujson <https://pypi.python.org/pypi/ujson/>`_ module. And it's BSD licensed!
 
 
-jsonDB is Fun
+ujsonDB is Fun
 ```````````````
 
-    >>> import jsondb
+    >>> import ujsondb
 
-    >>> db = jsondb.load('test.db', False)
+    >>> db = ujsondb.load('test.db', False)
 
     >>> db.set('key', 'value')
 
@@ -23,13 +23,13 @@ jsonDB is Fun
 Easy to Install
 ```````````````
 
-    $ pip install jsondb
+    $ pip install jusondb
 
 
 Links
 `````
 
-* `website <http://packages.python.org/jsonDB/>`_
-* `documentation <http://packages.python.org/jsonDB/commands.html>`_
+* `website <http://packages.python.org/ujsonDB/>`_
+* `documentation <http://packages.python.org/ujsonDB/commands.html>`_
 * `pypi
-  <http://pypi.python.org/pypi/jsonDB>`_
+  <http://pypi.python.org/pypi/ujsonDB>`_
